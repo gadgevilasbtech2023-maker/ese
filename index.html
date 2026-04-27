@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Demo Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    h1   { color: #2c3e50; }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="greeting">Hello, world!</h1>
+
+  <p>This is a minimal HTML file you can host on GitHub Pages or any static server.</p>
+
+  <button id="btn">Click me</button>
+
+  <script>
+    // Tiny script just to prove the page is interactive
+    document.getElementById('btn').addEventListener('click', () => {
+      document.getElementById('greeting').textContent = 'Clicked!';
+    });
+  </script>
+
+</body>
+</html>
